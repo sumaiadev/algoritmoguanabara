@@ -1,0 +1,31 @@
+Var
+// Seção de Declarações das variáveis 
+   timeum, timedois, dif: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   escreval ("Quantos gols o vitória fez? ")
+   leia (timeum)
+   escreval ("Quantos gols o bahia fez? ")
+   leia (timedois)
+   escreval ()
+   
+   dif <- timeum - timedois
+   
+   escolha dif
+           caso 0
+                escreval("Número de gols: ", dif)
+                escreva ("Status: EMPATE")
+           caso 1, 2, 3
+                escreval("Número de gols: ", dif)
+                escreva ("Status: BOA PARTIDA")
+           caso 4, 5, 6
+                escreval("Número de gols: ", dif)
+                escreva ("Status: GOLEADAAAAAA É MAIS GOSTOSOO")
+           outrocaso
+                escreval("Número de gols: ", dif)
+                escreva ("Status:   FOI UMA PARTIDA HUMILHANTE")
+   fimescolha
+
+
+Fimalgoritmo
