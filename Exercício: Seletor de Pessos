@@ -1,0 +1,36 @@
+Var
+// Seção de Declarações das variáveis 
+   sexo: caractere
+   idade, contador, cor, Validado, validadof: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  contador <- 1
+  repita
+        escreval ("=====================")
+        escreval (" SELETOR DE PESSOAS ")
+        escreval ("=====================")
+        escreval ("Qual o sexo: [F/M]")
+        leia (sexo)
+        escreval ("Qual a idade: ")
+        leia (idade)
+        escreval ("Qual a cor do cabelo: ")
+        escreval ("[1] - PRETO")
+        escreval ("[2] - RUIVO")
+        escreval ("[3] - LOIRO")
+        leia (cor)
+        se (sexo = "M") e (idade >= 18) e (cor = 1) entao
+           validado <- validado + 1
+        fimse
+        se (sexo = "F") entao
+            se (idade >= 25) e (idade <= 30) entao
+                 se (cor = 3) entao
+                    validadof <- validadof + 1
+                 fimse
+            fimse
+        fimse
+        contador <- contador + 1
+   ate (contador > 5)
+   escreval ("Total de homens mais de 18 anos e de cabelo preto: ", validado)
+   escreval ("Total de mulheres entre 25 e 30 anos e de cabelo loiro: ", validadof)
+Fimalgoritmo
