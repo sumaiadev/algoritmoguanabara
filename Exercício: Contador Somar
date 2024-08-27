@@ -1,0 +1,18 @@
+   contador, somar, numero, qt, maior: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval ("quantos números deseja somar? ")
+   leia (qt)
+   contador <- 1
+   enquanto contador <= qt faca
+            escreval ("Digite o ",contador,"° numero: ")
+            leia (numero)
+            se (numero > maior) entao
+               maior <- numero
+            fimse
+            somar <- somar + numero
+            contador <- contador + 1
+   fimenquanto
+   escreval ("A soma de todos os números digitados é: ", somar)
+   escreval ("O maior número digitado é: ", maior)
