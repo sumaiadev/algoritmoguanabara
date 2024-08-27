@@ -1,0 +1,40 @@
+Var
+// Seção de Declarações das variáveis 
+   valor, nulo, contador, cinco, par, somar: inteiro
+   media: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  contador <- 1
+  valor <- 1
+  para contador <- 1 ate 5 faca
+      escreval ("Digite o", valor,"° valor: ")
+      leia (valor)
+      somar <- somar + valor
+      se (valor = 0) entao
+         nulo <- nulo + 1
+      fimse
+      
+      se (valor % 5 = 0) entao
+         cinco <- cinco + 1
+      fimse
+
+      se (valor = 0) entao
+         nulo <- nulo + 1
+      fimse
+      
+      se (valor / 2 = 0) entao
+         par <- par + 1
+      fimse
+
+  fimpara
+  media <- (somar / 5)
+     
+  escreval ("----------------------------")
+  escreval ("Soma dos valores: ", somar)
+  escreval ("Média entre os valores: ", media)
+  escreval ("Divisíveis  por 5: ", cinco)
+  escreval ("Qt de números nulos: ", nulo)
+  escreval ("Qt de números pares: ", par)
+  escreval ("----------------------------")
+Fimalgoritmo
