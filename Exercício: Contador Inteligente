@@ -1,0 +1,32 @@
+Var
+// Seção de Declarações das variáveis 
+ sel, cont, R: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  repita
+        escreval ("-----------------------------")
+        escreval (" CONTADOR INTELIGENTE - MENU")
+        escreval ("-----------------------------")
+        escreval ("[1] - 0 até 10")
+        escreval ("[2] - 10 até 0")
+        escreval ("[3] - SAIR")
+        leia (R)
+        se (R = 1) entao
+           sel <- 0
+              repita
+                escreval (sel, " - ")
+                sel <- sel + 1
+              ate (sel > 10)
+        senao
+             se (R = 2) entao
+                sel <- 10
+                repita
+                   escreval (sel, " - ")
+                   sel <- sel - 1
+                ate (sel < 0)
+             fimse
+        fimse
+  ate (R = 3)
+
+Fimalgoritmo
