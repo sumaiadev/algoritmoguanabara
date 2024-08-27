@@ -1,0 +1,30 @@
+Var
+// Seção de Declarações das variáveis 
+   ano_atual, ano_inteiro, idade: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+   escreval ("---------------------------")
+   escreval (" DEPARTAMENTO DE TRÂNSITO ")
+   escreval ("---------------------------")
+   escreval ()
+   
+   escreval ("Digite o ano atual: ")
+   leia (ano_atual)
+   escreval ("Digite em que ano nasceu: ")
+   leia (ano_inteiro)
+   escreval ()
+   
+   idade <- ano_atual - ano_inteiro
+   
+   escreval ("--------- STATUS ---------")
+   escreval ("IDADE: ", idade)
+   se (idade > 18) entao
+      escreval ("APTO A TIRAR A CARTEIRA!")
+   senao
+      escreval ("INAPTO A TIRAR CARTEIRA!")
+   fimse
+   escreval ("--------------------------")
+
+Fimalgoritmo
