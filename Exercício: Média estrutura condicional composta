@@ -1,0 +1,52 @@
+Var
+// Seção de Declarações das variáveis 
+   notaum, notadois, media: real
+   nome: caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+    escreval ("-----------------------------")
+    escreval (" ESCOLA BRISA QUATRO E VINTE ")
+    escreval ("-----------------------------")
+    ESCREVAL ()
+    
+    escreval ("Digite o nome do aluno: ")
+    leia (nome)
+    escreval ("Digite a primeira note: ")
+    leia (notaum)
+    escreval ("Digite a segunda nota: ")
+    leia (notadois)
+    
+    media <- (notaum + notadois) / 2
+    
+    escreval ("-----------------------------")
+    escreval ("Nome do aluno: ", nome)
+    
+    se (media >= 9) e (media <= 10) entao
+       escreval ("Média: ", media)
+       escreval ("Aproveitamento: A")
+    senao
+         se (media >= 7) e (media <= 8) entao
+             escreval ("Média: ", media)
+             escreval ("Aproveitamento: B")
+         senao
+              se (media >= 5) e (media <= 6) entao
+                  escreval ("Média: ", media)
+                  escreval ("Aproveitamento: C")
+              senao
+                se (media >= 3) e (media <= 4) entao
+                    escreval ("Média: ", media)
+                    escreval ("Aproveitamento: D")
+                senao
+                     se (media <= 2) e (media >= 1) entao
+                         escreval ("Média: ", media)
+                         escreval ("Aproveitamento: E")
+                     senao
+                          escreval ("Média: ", media)
+                          escreval ("Aproveitamento: REPROVADO")
+                     fimse
+                fimse
+              fimse
+         fimse
+    fimse
+    escreval ("-----------------------------")
