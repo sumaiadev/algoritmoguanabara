@@ -1,0 +1,39 @@
+Var
+// Seção de Declarações das variáveis 
+  doacao, valor: inteiro
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+    escreval ("------------------------------")
+    escreval ("     CRIANÇA ESPERANAÇA      ")
+    escreval ("------------------------------")
+    escreval ("Obrigado por participar deste ato!")
+    escreval ("------------------------------")
+    escreval ()
+    
+    escreval ("PARA DOAR DIGITE: ")
+    escreval ("[1] - R$10")
+    escreval ("[2] - R$30")
+    escreval ("[3] - R$50")
+    escreval ("[4] - Outro valor")
+    leia (doacao)
+    escolha doacao
+            caso 1
+                 valor <- 10
+            caso 2
+                 valor <- 30
+            caso 3
+                 valor <- 50
+            caso 4
+                 escreval("DIGITE O VALOR: ")
+                 leia (valor)
+    fimescolha
+    
+    escreval ()
+    escreval ("------------------------------")
+    escreval ("Doação no valor de: R$", valor)
+    escreval ("muito obrigado pela sua doação")
+    escreval ("------------------------------")
+    
+Fimalgoritmo
