@@ -1,0 +1,19 @@
+Var
+// Seção de Declarações das variáveis 
+   dolar, valor: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   escreval ("Conversão de real para dólar")
+   escreval ("Preço atual do dólar: R$5,47")
+   escreval()
+   
+   escreval ("Quanto deseja converter? R$")
+   leia (valor)
+   
+   dolar <- valor/5,47
+   
+   escreval ("Operação concluida!")
+   escreval ("Valor em dólar: U$", dolar)
+
+Fimalgoritmo
