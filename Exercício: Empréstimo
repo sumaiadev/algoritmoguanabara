@@ -1,0 +1,22 @@
+Var
+// Seção de Declarações das variáveis 
+      valor, juros, parcela, mult, total: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+      escreval ("Informe o valor do empréstimo que deseja: ")
+      leia (valor)
+      
+      juros <- (valor * 20) / 100
+      total <- valor + juros
+      
+       escreval ("O valor desejado é: R$", valor)
+       escreval("Mas com juros acrescentado o empréstimo fica: R$", total)
+       escreval ("Quer dividir em quantas parcelas? ")
+       leia (parcela)
+       
+       mult <- total/parcela
+       
+       escreval ("Você pagará: R$", mult, " por mês")
+
+Fimalgoritmo
