@@ -1,0 +1,27 @@
+Var
+// Seção de Declarações das variáveis 
+   peso, altura, IMC: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   escreval ("Qual é o seu peso? ")
+   leia (peso)
+   escreval ("Qual é a sual altura? ")
+   leia (altura)
+   escreval()
+   
+   IMC <- peso / (altura ^ 2)
+   
+   se (IMC < 18.5) entao
+      escreval ("Magreza, IMC:", IMC)
+   senao
+        se (IMC > 18.5) e (IMC < 24.9) entao
+            escreval ("Normal, IMC:", IMC)
+        senao
+          se (IMC > 25) e (IMC < 29) entao
+             escreval("Sobrepeso, IMC:", IMC)
+          fimse
+        fimse
+   fimse
+
+Fimalgoritmo
