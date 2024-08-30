@@ -1,0 +1,26 @@
+Var
+// Seção de Declarações das variáveis 
+   nome: caractere
+   c: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   c <- 1
+   Escreval ("Seu nome: ")
+   leia (nome)
+   
+   Escreval ("Total de letras com o seu nome: ", compr(nome))
+   Escreval ("Seu nome em maiúsculo: ", maiusc(nome))
+   Escreval ("Seu nome em minúsculo: ", minusc(nome))
+   Escreval ("A primeira letra do seu nome: ", copia(nome, 1, 1))
+   escreval ("A última letra do seu nome: ", copia(nome, compr(nome), 1))
+   se pos("a", nome) = 0 entao
+      Escreval ("Seu nome NÃO tem a letra A")
+   senao
+      escreval ("Seu nome tem a letra A, na posição: ", pos("a", nome))
+   fimse
+   para c <- compr(nome) ate 1 passo -1 faca
+        escreva (copia(maiusc(nome), c, 1))
+   fimpara
+
+
+Fimalgoritmo
