@@ -1,0 +1,32 @@
+Var
+// Seção de Declarações das variáveis 
+   num: inteiro
+   resposta: caractere
+   
+funcao parouimpar(a: inteiro) : caractere
+var
+   res: caractere
+inicio
+   se (a % 2 = 0) entao
+      res <- "PAR!"
+   senao
+      res <- "IMPAR!"
+   fimse
+   
+   retorne res
+fimfuncao
+   
+   
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+    escreval ("Digite um número: ")
+    leia (num)
+    
+    resposta <- parouimpar(num)
+    
+    escreval (num, " É " ,resposta)
+    
+    
+
+Fimalgoritmo
