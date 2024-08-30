@@ -1,0 +1,28 @@
+Var
+// Seção de Declarações das variáveis 
+ Valorum, valordois, resposta: inteiro
+ 
+funcao somar(a, b: inteiro) : inteiro
+var
+  S: inteiro
+inicio
+    s <- a + b
+    retorne s
+fimfuncao
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+Escreval ("Digite um valor: ")
+leia (Valorum)
+escreval ("Digite o segundo valor: ")
+leia (valordois)
+
+resposta <- somar(Valorum, valordois)
+
+escreval ("O resultado é: ", resposta)
+
+
+
+Fimalgoritmo
