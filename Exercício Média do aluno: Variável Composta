@@ -1,0 +1,50 @@
+Var
+// Seção de Declarações das variáveis 
+   nome: vetor[1..4] de caractere
+   notaum: vetor[1..4] de real
+   notadois: vetor[1..4] de real
+   media: vetor[1..4] de real
+   MT, SM: real
+   i, total: inteiro
+   
+procedimento topo()
+inicio
+      escreval ("----------------------")
+      escreval ("Escola brisa do amanhã")
+      escreval ("----------------------")
+fimprocedimento
+   
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+   para i <- 1 ate 4 faca
+      topo()
+      escreval (i, "° aluno")
+      escreval ("------------")
+      escreval ("Digite o nome do aluno: ")
+      leia (nome[i])
+      escreval ("Primeira nota: ")
+      leia(notaum[i])
+      escreval ("Segunda nota: ")
+      leia (notadois[i])
+      media[i] <- (notaum[i] + notadois[i])/2
+      SM <- SM + media[i]
+      escreval ("------------")
+      limpatela
+   fimpara
+   
+   
+   limpatela
+   topo()
+   MT <- (SM/4)
+   para i <- 1 ate 4 faca
+        escreval (nome[i]:16,media[i]:4:1)
+        se (media[i] > MT) entao
+             total <- total + 1
+        fimse
+   fimpara
+   escreval ("----------------------")
+   escreval ("Média da turma: ", MT:4:1)
+   escreval ("Alunos acima da média da turma: ", total)
+
+Fimalgoritmo
