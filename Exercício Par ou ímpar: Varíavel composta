@@ -1,0 +1,42 @@
+Var
+// Seção de Declarações das variáveis 
+   valores: vetor[1..7] de inteiro
+   i, par, impar: inteiro
+   
+   
+procedimento topo()
+inicio
+   escreval("----------------------------------------")
+   escreval(" IDENTIFICADOR DE NÚMEROS PARES E ÍMPAR ")
+   escreval("----------------------------------------")
+fimprocedimento
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+   topo()
+   para i <- 1 ate 7 faca
+        escreval ("Digite ", i, "° valor: ")
+        leia(valores[i])
+        se valores[i] % 2 = 0 entao
+             par <- par + 1
+
+        senao
+             impar <- impar + 1
+        fimse
+   fimpara
+
+
+   limpatela
+   topo()
+   
+   para i <- 1 ate 7 faca
+        se valores[i] % 2 = 0 entao
+             escreval ("Na posição ", i, " é número PAR")
+        fimse
+   fimpara
+   escreval ("---------------------------------")
+   escreval ("O total de números pares é: ", par)
+   escreval ("O total de números ímpar é: ", impar)
+
+Fimalgoritmo
